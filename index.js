@@ -1,5 +1,30 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+let reversedArray = []
+let fwdArray
+let rvsString
+
+function isPalindrome(fwdString) {
+  stringSplitter(fwdString);
+      return fwdString ===`${rvsString}`
+  }
+
+
+function stringSplitter(string){
+  fwdArray = string.split("")
+  reverseSplitWord(fwdArray)
+}
+
+function reverseSplitWord(array){
+  for(let i = array.length; i> 0; i--){
+    reversedArray = [...reversedArray, array.pop()]
+
+  }
+  arraytoString(reversedArray)
+}
+
+function arraytoString (array){
+  debugger;
+  rvsString = array.join('');
+  reversedArray=[]
 }
 
 /* 
